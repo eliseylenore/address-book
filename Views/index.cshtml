@@ -1,3 +1,22 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
+
+<span class="row">
+  <span class="col-xs-9"><!--contact list heading-->
+    <h1>Contact List</h1>
+  </span><!--end contact list heading-->
+  <span class="col-xs-3"><!--add button-->
+    <a href="/contact/form"><button type="button" class="btn btn-info">Add New Contact</button></a>
+  </span><!--end add button-->
+</span><!--end first row-->
+<span class="row">
+  @if (@Model.Count == 0)
+  {
+    <h3>No contacts have been added yet!</h3>
+  }
+  @foreach (var contact in Model)
+  {
+    <h3><a href='/contacts/@contact.GetId()'>@contact.GetName()</h3>
+  }
+</span><!--end second row-->
