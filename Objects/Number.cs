@@ -1,23 +1,24 @@
 using System.Collections.Generic;
 using System;
 
-namespace AddressBook
+namespace AddressBook.Objects
 {
-  public class Number
-  {
-    private string _number;
+    public class Number
+    {
+        private string _number;
 
-  public Number(string number)
-  {
-    _number = number;
-  }
+        public Number(string number)
+        {
+          _number = number;
+        }
 
-  public string GetNumber()
-  {
-    return _number;
-  }
-  public void SetName(string newNumber)
-  {
-    _number = newNumber;
-  }
+        public string GetNumber()
+        {
+          return _number;
+        }
+        public void SetName(string newNumber)
+        {
+          _number = newNumber;
+        }
+    }
 }
