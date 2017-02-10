@@ -19,7 +19,7 @@
   {
     <h3><a href='/contacts/@contact.GetId()'>@contact.GetName()</h3>
   }
-  <form>
-    <a href="/contacts/clear"><button type="submit" class="btn btn-info">Clear Contacts</button></a>
+  <form action="/contacts/clear" method="post">
+    <button type="submit" name="button" class="btn btn-info">Clear Contacts</button>
   </form>
 </span><!--end second row-->

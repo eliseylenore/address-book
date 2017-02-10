@@ -38,10 +38,10 @@ namespace AddressBook
         model.Add("contact", selectedContact);
         return View["contact.cshtml", model];
       };
-      Post["contact/clear"] = _ => {
-        _contacts.Clear();
-        return ["contacts_clear.cshtml"];
-      }
+      Post["/contacts/clear"] = _ => {
+        Contact.ClearAll();
+        return View["contacts_clear.cshtml"];
+      };
     }
   }
 }

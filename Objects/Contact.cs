@@ -53,7 +53,7 @@ namespace AddressBook.Objects
     {
       return _contacts;
     }
-    public static void Clear()
+    public static void ClearAll()
     {
       _contacts.Clear();
     }
