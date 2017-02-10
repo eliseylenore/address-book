@@ -1,0 +1,25 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<form action="/form/new" method="post">
+  <div class="form-group"><!--Name-->
+    <label for="name">Name:</label>
+    <input type="text" name="name" class="form-control">
+  </div><!--end Name-->
+  <div class="form-group"><!--Phone-->
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" class="form-control">
+  </div><!--End Phone-->
+  <div class="form-group"><!--Address-->
+    <label for="first-line">First Line: </label>
+    <input type="text" name="first-line" class="form-control">
+    <label for="city">City: </label>
+    <input type="text" name="city" class="form-control">
+    <label for="state">State: </label>
+    <input type="text" name="state" class="form-control">
+    <label for="zip">Zip: </label>
+    <input type="text" name="Zip" class="form-control">
+  </div><!--End Address-->
+  <button type="submit" class="btn btn-info">Add</button>
+</form>
