@@ -19,5 +19,42 @@ namespace AddressBook
       _numbers = new List<Number>{};
       _addresses = new List<Address>{};
     }
+
+    public string GetName()
+    {
+      return _name;
+    }
+    public int GetId()
+    {
+      return _id;
+    }
+    public List<Number> GetNumbers()
+    {
+      return _numbers;
+    }
+    public void AddNumber(Number number)
+    {
+      _numbers.Add(number);
+    }
+    public List<Address> GetAddresses()
+    {
+      return _addresses;
+    }
+    public void AddAdress(Address address)
+    {
+      _addresses.Add(address);
+    }
+    public static List<Contact> GetAll()
+    {
+      return _contacts;
+    }
+    public static void Clear()
+    {
+      _contacts.Clear();
+    }
+    public static Contact Find(int searchId)
+    {
+      return _contacts[searchId-1];
+    }
   }
 }
