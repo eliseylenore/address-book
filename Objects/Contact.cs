@@ -24,6 +24,10 @@ namespace AddressBook
     {
       return _name;
     }
+    public void SetName(string newName) 
+    {
+      newName = _name;
+    }
     public int GetId()
     {
       return _id;
