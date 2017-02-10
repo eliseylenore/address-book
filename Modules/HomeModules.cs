@@ -20,14 +20,24 @@ namespace AddressBook
         List<Number> contactNumbers = newContact.GetNumbers();
         var newNumber = new Number(Request.Form["number"]);
         contactNumbers.Add(newNumber);
-        List<Address> contactAddresses = newContact.GetAddresses;
+        List<Address> contactAddresses = newContact.GetAddresses();
         var newAddress = new Address(Request.Form["first-line"], Request.Form["city"], Request.Form["state"], Request.Form["zip"]);
         contactAddresses.Add(newAddress);
         model.Add("numbers", contactNumbers);
         model.Add("addresses", contactAddresses);
         model.Add("contact", newContact);
         return View["contact.cshtml", model];
-      }
+      };
+      Get["/contacts/{id}"] = parameters => {
+        Dictionary<string, object> model = new Dictionary<string, object>();
+        Contact selectedContact = Contact.Find(parameters.id);
+        List<Number> allNumbers = selectedContact.GetNumbers();
+        List<Address> allAddresses = selectedContact.GetAddresses();
+        model.Add("numbers", allNumbers);
+        model.Add("addresses", allAddresses);
+        model.Add("contact", selectedContact);
+        return View["contact.cshtml", model];
+      };
     }
   }
 }

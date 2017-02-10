@@ -32,6 +32,7 @@ namespace AddressBook.Objects
     {
       return _id;
     }
+
     public List<Number> GetNumbers()
     {
       return _numbers;

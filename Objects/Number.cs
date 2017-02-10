@@ -11,7 +11,7 @@ namespace AddressBook.Objects
         {
           _number = number;
         }
-
+        
         public string GetNumber()
         {
           return _number;

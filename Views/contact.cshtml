@@ -7,12 +7,12 @@
 <h1>@Model["contact"].GetName()</h1>
 @foreach (var number in @Model["numbers"])
 {
-  <h4>@number.GetNumber</h4>
+  <h4>@number.GetNumber()</h4>
 }
 @foreach (var address in @Model["addresses"])
 {
-  <h4>@address.GetFirstLine</h4>
-  <h4>@address.GetCity</h4>
-  <h4>@address.GetState</h4>
-  <h4>@address.GetZip</h4>
+  <h4>@address.GetFirstLine()</h4>
+  <h4>@address.GetCity()</h4>
+  <h4>@address.GetState()</h4>
+  <h4>@address.GetZip()</h4>
 }
