@@ -1,12 +1,11 @@
-using System.Collections.Generic
-using System
+using System.Collections.Generic;
+using System;
 
 namespace AddressBook
 {
   public class Number
   {
     private string _number;
-  }
 
   public Number(string number)
   {

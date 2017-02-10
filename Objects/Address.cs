@@ -1,5 +1,5 @@
-using System.Collections.Generic
-using System
+using System.Collections.Generic;
+using System;
 
 namespace AddressBook
 {
@@ -9,7 +9,6 @@ namespace AddressBook
     private string _city;
     private string _state;
     private string _zip;
-  }
 
   public Address(string firstLine, string city, string state, string zip)
   {

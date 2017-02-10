@@ -1,5 +1,5 @@
-using System.Collections.Generic
-using System
+using System.Collections.Generic;
+using System;
 
 namespace AddressBook
 {
@@ -24,7 +24,7 @@ namespace AddressBook
     {
       return _name;
     }
-    public void SetName(string newName) 
+    public void SetName(string newName)
     {
       newName = _name;
     }
