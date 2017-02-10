@@ -2,11 +2,6 @@
 
 /************* Nav Bar *************/
 
-/*Float the links to the right*/
-#nav-right {
-  float: right;
-}
-
 /*Once they are floated to the right, the links lose their padding. We give them back the padding, and change the color of the nav bar*/
 .nav,  .nav a {
   padding: 10px 15px;
@@ -14,8 +9,31 @@
   background: #778aa6;
   color: white;
 }
+.nav a {
+  font-size: 1.5em;
+}
+
+.nav li {
+  display: block;
+}
 
 /*Make hover color for pills lighter*/
 .nav-pills>li>a:hover {
   background-color: #b7bbc3;
+}
+
+/************* Media Queries *************/
+
+@media (min-width: 400px) {
+  /*Float the links to the right*/
+  #nav-right {
+    float: right;
+  }
+}
+
+@media (min-width: 789px) {
+  ul.nav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }

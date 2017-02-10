@@ -2,16 +2,14 @@
   Layout="Shared/_Layout.cshtml";
 }
 
-
-<h1>@Model["contact"].GetName()</h1>
+<h1>Contact: @Model["contact"].GetName()</h1>
 @foreach (var number in @Model["numbers"])
 {
-  <h4>@number.GetNumber()</h4>
+  <h4>Phone number: @number.GetNumber()</h4>
 }
 @foreach (var address in @Model["addresses"])
 {
+  <h3>Address: </h3>
   <h4>@address.GetFirstLine()</h4>
-  <h4>@address.GetCity()</h4>
-  <h4>@address.GetState()</h4>
-  <h4>@address.GetZip()</h4>
+  <h4>@address.GetCity(), @address.GetState() @address.GetZip()</h4>
 }
