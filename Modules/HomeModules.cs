@@ -28,6 +28,7 @@ namespace AddressBook
         model.Add("contact", newContact);
         return View["contact.cshtml", model];
       };
+      //Search functionality does not work, but I would love it to.
       Get["/contacts/search"] = _ => {
         string searchString = (Request.Form["search-string"]);
         Contact searchResultContact = Contact.Search(searchString);
