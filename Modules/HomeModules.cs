@@ -28,6 +28,11 @@ namespace AddressBook
         model.Add("contact", newContact);
         return View["contact.cshtml", model];
       };
+      Get["/contacts/search"] = _ => {
+        string searchString = (Request.Form["search-string"]);
+        Contact searchResultContact = Contact.Search(searchString);
+        return View["search_results.cshtml", searchResultContact];
+      };
       Get["/contacts/{id}"] = parameters => {
         Dictionary<string, object> model = new Dictionary<string, object>();
         Contact selectedContact = Contact.Find(parameters.id);

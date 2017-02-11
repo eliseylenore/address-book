@@ -61,5 +61,15 @@ namespace AddressBook.Objects
     {
       return _contacts[searchId-1];
     }
+    public static Contact Search(string searchString)
+    {
+      foreach (Contact person in _contacts) {
+        if (person._name.ToLower() == searchString.ToLower())
+        {
+          return person;
+        }
+      }
+      return null;
+    }
   }
 }

@@ -1,4 +1,15 @@
+.btn-info {
+  background-color: #99aacc;
+  border-color: #99aacc;
+}
 
+.btn-info:hover {
+    background-color: #778aa6;
+}
+
+#search-form {
+  margin-top: 20px;
+}
 
 /************* Nav Bar *************/
 
@@ -10,7 +21,11 @@
   color: white;
 }
 .nav a {
-  font-size: 1.5em;
+  font-size: 1.75rem;
+}
+
+li#new-contact {
+  font-size: 1.25rem;
 }
 
 .nav li {
@@ -23,13 +38,6 @@
 }
 
 /************* Media Queries *************/
-
-@media (min-width: 400px) {
-  /*Float the links to the right*/
-  #nav-right {
-    float: right;
-  }
-}
 
 @media (min-width: 789px) {
   ul.nav {
