@@ -12,43 +12,43 @@ namespace AddressBook.Objects
 
         public Address(string firstLine, string city, string state, string zip)
         {
-          _firstLine = firstLine;
-          _city = city;
-          _state = state;
-          _zip = zip;
+            _firstLine = firstLine;
+            _city = city;
+            _state = state;
+            _zip = zip;
         }
 
         public string GetFirstLine()
         {
-          return _firstLine;
+            return _firstLine;
         }
         public void SetFirstLine(string newFirstLine)
         {
-          _firstLine = newFirstLine;
+            _firstLine = newFirstLine;
         }
         public string GetCity()
         {
-          return _city;
+            return _city;
         }
         public void SetCity(string newCity)
         {
-          _city = newCity;
+            _city = newCity;
         }
         public string GetState()
         {
-          return _state;
+            return _state;
         }
         public void SetState(string newState)
         {
-          _state = newState;
+            _state = newState;
         }
         public string GetZip()
         {
-          return _zip;
+            return _zip;
         }
         public void SetZip(string newZip)
         {
-          _zip = newZip;
+            _zip = newZip;
         }
     }
 }

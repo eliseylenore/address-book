@@ -9,16 +9,16 @@ namespace AddressBook.Objects
 
         public Number(string number)
         {
-          _number = number;
+            _number = number;
         }
-        
+
         public string GetNumber()
         {
-          return _number;
+            return _number;
         }
         public void SetName(string newNumber)
         {
-          _number = newNumber;
+            _number = newNumber;
         }
     }
 }
